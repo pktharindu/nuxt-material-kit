@@ -1,7 +1,7 @@
 {
   "name": "nuxt-material-kit",
   "version": "1.0.0",
-  "description": "Nuxt Material Kit",
+  "description": "Nuxt.js Material Template",
   "author": "Pathagama Kuruppuge Tharindu",
   "private": true,
   "scripts": {
