@@ -1,6 +1,6 @@
 # Nuxt Material Kit
 
-> Nuxt.js Material Template
+> A Badass Nuxt.js UI Kit made with Material Design.
 
 ## Build Setup
 

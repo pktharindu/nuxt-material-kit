@@ -27,8 +27,8 @@
               alt="leaf1"
               class="leaf1">
             <div class="brand">
-              <h1>Vue Material Kit</h1>
-              <h3>A Badass Vue.js UI Kit made with Material Design.</h3>
+              <h1>Nuxt Material Kit</h1>
+              <h3>A Badass Nuxt.js UI Kit made with Material Design.</h3>
             </div>
           </div>
 
