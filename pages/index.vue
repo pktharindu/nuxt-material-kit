@@ -2,368 +2,272 @@
   <div class="wrapper">
     <parallax
       :style="headerStyle"
-      class="page-header header-filter">
-      <div class="md-layout">
-        <div class="md-layout-item">
-          <div class="image-wrapper">
-            <img
-              v-show="leafShow"
-              :src="leaf4"
-              alt="leaf4"
-              class="leaf4">
-            <img
-              v-show="leafShow"
-              :src="leaf3"
-              alt="leaf3"
-              class="leaf3">
-            <img
-              v-show="leafShow"
-              :src="leaf2"
-              alt="leaf2"
-              class="leaf2">
-            <img
-              v-show="leafShow"
-              :src="leaf1"
-              alt="leaf1"
-              class="leaf1">
-            <div class="brand">
-              <h1>Vue Material Kit</h1>
-              <h3>A Badass Vue.js UI Kit made with Material Design.</h3>
-            </div>
+      class="section page-header header-filter">
+      <div class="container">
+        <div class="md-layout">
+          <div class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100">
+            <h1 class="title">Your Story Starts With Us.</h1>
+            <h4>Every landing page needs a small description after the big bold title, that's why we added this text here. Add here all the information that can make you or your product create the first impression.</h4>
+            <br>
+            <md-button
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              class="md-success md-lg"
+              target="_blank"><i class="fas fa-play"/> Watch video</md-button>
           </div>
-
         </div>
       </div>
     </parallax>
     <div class="main main-raised">
-      <div class="section section-basic">
-        <div class="container">
-          <div class="title">
-            <h2>Basic Elements</h2>
-          </div>
-          <basic-elements/>
-        </div>
-      </div>
-      <div class="section section-navbars">
-        <div class="container">
-          <small-navigation/>
-        </div>
-        <navigation/>
-      </div>
-      <div class="section section-tabs">
-        <div class="container">
-          <tabs/>
-        </div>
-      </div>
-      <div class="section section-white">
-        <div class="container">
-          <nav-pills/>
-        </div>
-      </div>
-      <div class="section section-notifications">
-        <div class="container">
-          <div class="title">
-            <h3>Notifications</h3>
-          </div>
-        </div>
-        <notifications/>
-      </div>
       <div class="section">
         <div class="container">
-          <typography-images/>
-        </div>
-      </div>
-      <div class="section section-javascript">
-        <div class="container">
-          <javascript-components/>
-        </div>
-      </div>
-      <div class="section">
-        <div class="container text-center">
           <div class="md-layout">
-            <div class="md-layout-item md-size-66 md-xsmall-size-100 ml-auto mr-auto text-center">
-              <h2>Completed with examples</h2>
-              <h4>The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. More importantly, looking at them will give you a picture of what you can built with this powerful kit.</h4>
+            <div class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto text-center">
+              <h2 class="title text-center">Let's talk product</h2>
+              <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
             </div>
           </div>
-        </div>
-      </div>
-      <div
-        :style="signupImage"
-        class="section section-signup page-header">
-        <div class="container">
-          <div class="md-layout">
-            <div class="md-layout-item md-size-33 md-medium-size-40 md-small-size-50 md-xsmall-size-70 mx-auto text-center">
-              <login-card header-color="green">
-                <h4
-                  slot="title"
-                  class="card-title">Login</h4>
-                <md-button
-                  slot="buttons"
-                  href="javascript:void(0)"
-                  class="md-just-icon md-simple md-white">
-                  <i class="fab fa-facebook-square"/>
-                </md-button>
-                <md-button
-                  slot="buttons"
-                  href="javascript:void(0)"
-                  class="md-just-icon md-simple md-white">
-                  <i class="fab fa-twitter"/>
-                </md-button>
-                <md-button
-                  slot="buttons"
-                  href="javascript:void(0)"
-                  class="md-just-icon md-simple md-white">
-                  <i class="fab fa-google-plus-g"/>
-                </md-button>
-                <p
-                  slot="description"
-                  class="description">Or Be Classical</p>
-                <md-field
-                  slot="inputs"
-                  class="md-form-group">
-                  <md-icon>face</md-icon>
-                  <label>First Name...</label>
-                  <md-input v-model="firstname"/>
-                </md-field>
-                <md-field
-                  slot="inputs"
-                  class="md-form-group">
-                  <md-icon>email</md-icon>
-                  <label>Email...</label>
-                  <md-input
-                    v-model="email"
-                    type="email"/>
-                </md-field>
-                <md-field
-                  slot="inputs"
-                  class="md-form-group">
-                  <md-icon>lock_outline</md-icon>
-                  <label>Password...</label>
-                  <md-input v-model="password"/>
-                </md-field>
-                <md-button
-                  slot="footer"
-                  class="md-simple md-success md-lg">
-                  Get Started
-                </md-button>
-              </login-card>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="md-layout">
-        <div class="md-layout-item text-center">
-          <md-button
-            href="#/login"
-            class="md-simple md-success md-lg">View Login Page</md-button>
-        </div>
-      </div>
-      <div class="section section-examples">
-        <div class="container-fluid text-center">
-          <div class="md-layout">
-            <div class="md-layout-item">
-              <a
-                href="#/landing"
-                target="_blank">
-                <img
-                  :src="landing"
-                  alt="Rounded Image"
-                  class="img-raised rounded img-fluid">
-              </a>
-              <md-button
-                href="#/landing"
-                class="md-simple md-success md-lg">View Landing Page</md-button>
-            </div>
-            <div class="md-layout-item">
-              <a
-                href="#/profile"
-                target="_blank">
-                <img
-                  :src="profile"
-                  alt="Rounded Image"
-                  class="img-raised rounded img-fluid">
-              </a>
-              <md-button
-                href="#/profile"
-                class="md-simple md-success md-lg">View Profile Page</md-button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        id="downloadSection"
-        class="section section-download">
-        <div class="container">
-          <div class="md-layout text-center">
-            <div class="md-layout-item md-size-66 md-small-size-100 mx-auto">
-              <h2>Do you love this UI Kit?</h2>
-              <h4>Cause if you do, it can be yours for FREE. Hit the buttons below to navigate to our website where you can find the kit. Our friends from <a
-                href="https://themeisle.com/?utm_campaign=mkfree-hestia&amp;utm_source=creativetim&amp;utm_medium=website"
-                target="_blank">ThemeIsle</a> created a Wordpress Theme which can be also downloaded for free. Start a new project or give an old Bootstrap project a new look!</h4>
-            </div>
-            <div class="md-layout-item md-size-50 md-small-size-100 mx-auto">
-              <md-button
-                href="https://www.creative-tim.com/product/material-kit"
-                target="_blank"
-                class="md-success md-lg"><i class="fab fa-html5"/> Free HTML Download</md-button>
-              <md-button
-                href="https://themeisle.com/themes/hestia/?utm_campaign=mkfree-hestia&amp;utm_source=creativetim&amp;utm_medium=website"
-                class="md-success md-lg"
-                target="_blank"><i class="fab fa-wordpress"/> Wordpress Theme</md-button>
-            </div>
-          </div>
-          <br>
-
-          <div class="md-layout text-center">
-            <div class="md-layout-item md-size-66 md-small-size-100 mx-auto">
-              <h2>Want more?</h2>
-              <h4>We've just launched <a
-                href="https://www.creative-tim.com/product/vue-material-dashboard-pro?ref=utp-mk-demos"
-                target="_blank">Vue Material Dashboard PRO</a>. It has a huge number of components, sections and example pages. Start Your Development With A Badass Bootstrap UI Kit inspired by Material Design.</h4>
-            </div>
-            <div class="md-layout-item md-size-50 md-small-size-100 mx-auto">
-              <div class="btn-container">
-                <md-button
-                  href="https://www.creative-tim.com/product/vue-material-kit-pro?ref=utp-vmk-demos"
-                  class="md-button md-success md-lg md-upgrade disabled"
-                  target="_blank"><md-icon>unarchive</md-icon>Vue Material Kit PRO</md-button>
-                <md-button
-                  href="https://www.creative-tim.com/product/vue-material-dashboard-pro?ref=utp-vmd-demos"
-                  class="md-button md-success md-lg md-upgrade"
-                  target="_blank"><md-icon>unarchive</md-icon>Vue Material Dashboard PRO</md-button>
-              </div>
-            </div>
-          </div>
-
-          <div class="sharing-area text-center">
+          <div class="features text-center">
             <div class="md-layout">
-              <div class="md-layout-item">
-                <h3>Thank you for supporting us!</h3>
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="info">
+                  <div class="icon icon-info">
+                    <md-icon>chat</md-icon>
+                  </div>
+                  <h4 class="info-title">Free Chat</h4>
+                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                </div>
+              </div>
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="info">
+                  <div class="icon icon-success">
+                    <md-icon>verified_user</md-icon>
+                  </div>
+                  <h4 class="info-title">Verified Users</h4>
+                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                </div>
+              </div>
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="info">
+                  <div class="icon icon-danger">
+                    <md-icon>fingerprint</md-icon>
+                  </div>
+                  <h4 class="info-title">Fingerprint</h4>
+                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-center">
+        <div class="container">
+          <h2 class="title">Here is our team</h2>
+          <div class="team">
+            <div class="md-layout">
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="team-player">
+                  <md-card class="md-card-plain">
+                    <div class="md-layout-item md-size-50 mx-auto">
+                      <img
+                        :src="teamImg1"
+                        alt="Thumbnail Image"
+                        class="img-raised rounded-circle img-fluid">
+                    </div>
+                    <h4 class="card-title">Gigi Hadid
+                      <br>
+                      <small class="card-description text-muted">Model</small>
+                    </h4>
 
-            <md-button class="md-twitter"><i class="fab fa-twitter"/>Tweet</md-button>
-            <md-button class="md-facebook"><i class="fab fa-facebook-square"/> Share</md-button>
-            <md-button class="md-google"><i class="fab fa-google-plus"/> Share</md-button>
-            <md-button class="md-github"><i class="fab fa-github"/> Star</md-button>
+                    <md-card-content>
+                      <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                    </md-card-content>
+
+                    <md-card-actions class="text-center">
+                      <md-button
+                        href="javascript:void(0)"
+                        class="md-just-icon md-simple">
+                        <i class="fab fa-twitter"/>
+                      </md-button>
+                      <md-button
+                        href="javascript:void(0)"
+                        class="md-just-icon md-simple">
+                        <i class="fab fa-instagram"/>
+                      </md-button>
+                      <md-button
+                        href="javascript:void(0)"
+                        class="md-just-icon md-simple">
+                        <i class="fab fa-facebook-square"/>
+                      </md-button>
+                    </md-card-actions>
+                  </md-card>
+                </div>
+              </div>
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="team-player">
+                  <md-card class="md-card-plain">
+                    <div class="md-layout-item md-size-50 mx-auto">
+                      <img
+                        :src="teamImg2"
+                        alt="Thumbnail Image"
+                        class="img-raised rounded-circle img-fluid">
+                    </div>
+                    <h4 class="card-title">Carla Hortensia
+                      <br>
+                      <small class="card-description text-muted">Designer</small>
+                    </h4>
+
+                    <md-card-content>
+                      <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                    </md-card-content>
+
+                    <md-card-actions class="text-center">
+                      <md-button
+                        href="javascript:void(0)"
+                        class="md-just-icon md-simple">
+                        <i class="fab fa-twitter"/>
+                      </md-button>
+                      <md-button
+                        href="javascript:void(0)"
+                        class="md-just-icon md-simple">
+                        <i class="fab fa-linkedin"/>
+                      </md-button>
+                    </md-card-actions>
+                  </md-card>
+                </div>
+              </div>
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="team-player">
+                  <md-card class="md-card-plain">
+                    <div class="md-layout-item md-size-50 mx-auto">
+                      <img
+                        :src="teamImg3"
+                        alt="Thumbnail Image"
+                        class="img-raised rounded-circle img-fluid">
+                    </div>
+                    <h4 class="card-title">Kendall Jenner
+                      <br>
+                      <small class="card-description text-muted">Model</small>
+                    </h4>
+
+                    <md-card-content>
+                      <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                    </md-card-content>
+
+                    <md-card-actions class="text-center">
+                      <md-button
+                        href="javascript:void(0)"
+                        class="md-just-icon md-simple">
+                        <i class="fab fa-twitter"/>
+                      </md-button>
+                      <md-button
+                        href="javascript:void(0)"
+                        class="md-just-icon md-simple">
+                        <i class="fab fa-instagram"/>
+                      </md-button>
+                      <md-button
+                        href="javascript:void(0)"
+                        class="md-just-icon md-simple">
+                        <i class="fab fa-facebook-square"/>
+                      </md-button>
+                    </md-card-actions>
+                  </md-card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section-contacts">
+        <div class="container">
+          <div class="md-layout">
+            <div class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto">
+              <h2 class="text-center title">Work with us</h2>
+              <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
+              <form class="contact-form">
+                <div class="md-layout">
+                  <div class="md-layout-item md-size-50">
+                    <md-field>
+                      <label>Your Name</label>
+                      <md-input
+                        v-model="name"
+                        type="text"/>
+                    </md-field>
+                  </div>
+                  <div class="md-layout-item md-size-50">
+                    <md-field>
+                      <label>Your Email</label>
+                      <md-input
+                        v-model="email"
+                        type="email"/>
+                    </md-field>
+                  </div>
+                </div>
+                <md-field maxlength="5">
+                  <label>Your Message</label>
+                  <md-textarea v-model="message"/>
+                </md-field>
+                <div class="md-layout">
+                  <div class="md-layout-item md-size-33 mx-auto text-center">
+                    <md-button class="md-success">Send Message</md-button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
 </template>
 
 <script>
-import BasicElements from '@/components/templates/BasicElementsSection'
-import Navigation from '@/components/templates/NavigationSection'
-import SmallNavigation from '@/components/templates/SmallNavigationSection'
-import Tabs from '@/components/templates/TabsSection'
-import NavPills from '@/components/templates/NavPillsSection'
-import Notifications from '@/components/templates/NotificationsSection'
-import TypographyImages from '@/components/templates/TypographyImagesSection'
-import JavascriptComponents from '@/components/templates/JavascriptComponentsSection'
-import { LoginCard } from '@/components'
-
 export default {
-  name: 'Index',
-  components: {
-    BasicElements,
-    Navigation,
-    SmallNavigation,
-    Tabs,
-    NavPills,
-    Notifications,
-    TypographyImages,
-    JavascriptComponents,
-    LoginCard
-  },
-  bodyClass: 'index-page',
+  bodyClass: 'landing-page',
   props: {
-    image: {
+    header: {
       type: String,
-      default: require('@/assets/img/vue-mk-header.jpg')
+      default: require('@/assets/img/bg7.jpg')
     },
-    leaf4: {
+    teamImg1: {
       type: String,
-      default: require('@/assets/img/leaf4.png')
+      default: require('@/assets/img/faces/avatar.jpg')
     },
-    leaf3: {
+    teamImg2: {
       type: String,
-      default: require('@/assets/img/leaf3.png')
+      default: require('@/assets/img/faces/christian.jpg')
     },
-    leaf2: {
+    teamImg3: {
       type: String,
-      default: require('@/assets/img/leaf2.png')
-    },
-    leaf1: {
-      type: String,
-      default: require('@/assets/img/leaf1.png')
-    },
-    signup: {
-      type: String,
-      default: require('@/assets/img/city.jpg')
-    },
-    landing: {
-      type: String,
-      default: require('@/assets/img/landing.jpg')
-    },
-    profile: {
-      type: String,
-      default: require('@/assets/img/profile.jpg')
+      default: require('@/assets/img/faces/kendall.jpg')
     }
   },
   data() {
     return {
-      firstname: null,
+      name: null,
       email: null,
-      password: null,
-      leafShow: false
+      message: null
     }
   },
   computed: {
     headerStyle() {
       return {
-        backgroundImage: `url(${this.image})`
-      }
-    },
-    signupImage() {
-      return {
-        backgroundImage: `url(${this.signup})`
-      }
-    }
-  },
-  mounted() {
-    this.leafActive()
-    window.addEventListener('resize', this.leafActive)
-  },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.leafActive)
-  },
-  methods: {
-    leafActive() {
-      if (window.innerWidth < 768) {
-        this.leafShow = false
-      } else {
-        this.leafShow = true
+        backgroundImage: `url(${this.header})`
       }
     }
   }
 }
 </script>
 
-<style lang="scss">
-.section-download {
-  .md-button + .md-button {
-    margin-left: 5px;
-  }
+<style lang="scss" scoped>
+.md-card-actions.text-center {
+  display: flex;
+  justify-content: center !important;
+}
+.contact-form {
+  margin-top: 30px;
 }
 
-@media all and (min-width: 991px) {
-  .btn-container {
-    display: flex;
-  }
+.md-has-textarea + .md-layout {
+  margin-top: 15px;
 }
 </style>

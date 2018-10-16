@@ -8,7 +8,8 @@ module.exports = {
    */
   head: {
     title: pkg.name,
-    meta: [{
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
@@ -21,7 +22,8 @@ module.exports = {
         content: pkg.description
       }
     ],
-    link: [{
+    link: [
+      {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
@@ -29,7 +31,8 @@ module.exports = {
       {
         rel: 'stylesheet',
         type: 'text/css',
-        href: 'https://fonts.googleapis.com/css?family=Roboto:100:300,400,500,700,900|Material+Icons'
+        href:
+          'https://fonts.googleapis.com/css?family=Roboto:100:300,400,500,700,900|Material+Icons'
       },
       {
         rel: 'stylesheet',

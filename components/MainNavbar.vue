@@ -42,7 +42,7 @@
                       </md-button>
                       <ul class="dropdown-menu dropdown-with-icons">
                         <li>
-                          <a href="#/">
+                          <a href="/components">
                             <i class="material-icons">layers</i>
                             <p>All Components</p>
                           </a>
@@ -92,19 +92,19 @@
                       </md-button>
                       <ul class="dropdown-menu dropdown-with-icons">
                         <li>
-                          <a href="#/landing">
+                          <a href="/">
                             <i class="material-icons">view_day</i>
                             <p>Landing Page</p>
                           </a>
                         </li>
                         <li>
-                          <a href="#/login">
+                          <a href="/login">
                             <i class="material-icons">fingerprint</i>
                             <p>Login Page</p>
                           </a>
                         </li>
                         <li>
-                          <a href="#/profile">
+                          <a href="/profile">
                             <i class="material-icons">account_circle</i>
                             <p>Profile Page</p>
                           </a>
@@ -194,7 +194,7 @@ export default {
   },
   computed: {
     showDownload() {
-      const excludedRoutes = ['login', 'landing', 'profile']
+      const excludedRoutes = ['index', 'login', 'profile']
       return excludedRoutes.every(r => r !== this.$route.name)
     }
   },

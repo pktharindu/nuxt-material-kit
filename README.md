@@ -1,10 +1,10 @@
-# nuxt
+# Nuxt Material Kit
 
-> My geometric Nuxt.js project
+> Nuxt.js Material Template
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 
