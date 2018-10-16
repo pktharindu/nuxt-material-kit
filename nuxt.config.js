@@ -27,6 +27,12 @@ module.exports = {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
+      },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href:
+          'https://fonts.googleapis.com/css?family=Roboto:100:300,400,500,700,900|Material+Icons'
       }
     ]
   },
@@ -41,12 +47,24 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    'vue-material/dist/vue-material.min.css',
+    '~/assets/scss/material-kit.scss',
+    '~/assets/demo.css'
+  ],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    '~/plugins/vue-material',
+    '~/plugins/vue-lazyload',
+    {
+      src: '~plugins/vue-carousel',
+      ssr: false
+    },
+    '~/plugins/globals'
+  ],
 
   /*
    ** Nuxt.js modules

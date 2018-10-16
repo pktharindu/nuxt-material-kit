@@ -7,6 +7,8 @@ import NavTabsCard from './cards/NavTabsCard.vue'
 import LoginCard from './cards/LoginCard.vue'
 import Tabs from './Tabs.vue'
 import Modal from './Modal.vue'
+import MainNavbar from './MainNavbar.vue'
+import MainFooter from './MainFooter.vue'
 
 export {
   DropDown,
@@ -17,5 +19,7 @@ export {
   NavTabsCard,
   LoginCard,
   Tabs,
-  Modal
+  Modal,
+  MainNavbar,
+  MainFooter
 }
