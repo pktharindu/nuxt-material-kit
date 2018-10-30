@@ -42,10 +42,10 @@
                       </md-button>
                       <ul class="dropdown-menu dropdown-with-icons">
                         <li>
-                          <a href="/components">
+                          <nuxt-link to="/components">
                             <i class="material-icons">layers</i>
                             <p>All Components</p>
-                          </a>
+                          </nuxt-link>
                         </li>
                         <li>
                           <a href="https://demos.creative-tim.com/vue-material-kit/documentation/" >
@@ -92,22 +92,22 @@
                       </md-button>
                       <ul class="dropdown-menu dropdown-with-icons">
                         <li>
-                          <a href="/">
+                          <nuxt-link to="/">
                             <i class="material-icons">view_day</i>
                             <p>Landing Page</p>
-                          </a>
+                          </nuxt-link>
                         </li>
                         <li>
-                          <a href="/login">
+                          <nuxt-link to="/login">
                             <i class="material-icons">fingerprint</i>
                             <p>Login Page</p>
-                          </a>
+                          </nuxt-link>
                         </li>
                         <li>
-                          <a href="/profile">
+                          <nuxt-link to="/profile">
                             <i class="material-icons">account_circle</i>
                             <p>Profile Page</p>
-                          </a>
+                          </nuxt-link>
                         </li>
                       </ul>
                     </drop-down>
